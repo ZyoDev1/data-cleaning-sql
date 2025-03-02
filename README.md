@@ -1,34 +1,35 @@
-# Proyecto de Data Cleaning - Layoffs Dataset
+# Análisis de Despidos Masivos (Data Cleaning y Exploración con SQL)
 
-Este proyecto se centra en la limpieza y normalización del dataset de layoffs. El script SQL incluido realiza las siguientes tareas:
+## Descripción
+Este proyecto utiliza SQL para limpiar y analizar un conjunto de datos sobre despidos masivos en diferentes empresas y sectores. Como analista de datos y responsable de administración, mi objetivo es extraer insights clave y aplicar buenas prácticas de manipulación de datos.
 
-- **Creación de tablas de staging:** Se crean tablas temporales para trabajar sin modificar los datos originales.
-- **Eliminación de duplicados:** Uso de CTE y la función `ROW_NUMBER()` para identificar y eliminar registros duplicados.
-- **Estandarización de datos:** Se aplican funciones como `TRIM()` para normalizar textos y se actualizan valores inconsistentes (por ejemplo, transformar 'Crypto%' en 'Crypto').
-- **Conversión de formatos de fecha:** Se utiliza `STR_TO_DATE()` para convertir cadenas a formato de fecha y se modifica el tipo de datos.
-- **Manejo de valores nulos:** Se identifican y corrigen campos con valores nulos o vacíos.
-- **Eliminación de columnas innecesarias:** Se remueven columnas que no aportan valor al análisis.
+### Tecnologías utilizadas
+- MySQL
+- SQL para limpieza y exploración de datos
 
-## Tecnologías utilizadas
+## Estructura del Proyecto
 
-- SQL (MySQL o MariaDB)
+### 1. Limpieza de Datos (Data Cleaning)
+Se realizaron las siguientes acciones para asegurar la calidad del dataset:
+- Eliminación de duplicados
+- Normalización de valores en columnas clave (empresas, industrias, países)
+- Conversión de fechas al formato adecuado
+- Manejo de valores nulos
 
-## Instrucciones de uso
+### 2. Exploración y Análisis de Datos (EDA - Exploratory Data Analysis)
+Se aplicaron consultas SQL para analizar los despidos desde diferentes perspectivas:
+- Empresas con más despidos
+- Tendencias por industria, país y etapa de financiamiento
+- Evolución temporal de los despidos
+- Ranking de empresas con más despidos cada año
 
-1. Clona este repositorio en tu máquina local.
-2. Abre el archivo `data_cleaning.sql` en tu entorno de base de datos.
-3. Ejecuta el script paso a paso para observar cómo se limpian y transforman los datos.
-4. Revisa el resultado final en la tabla `layoffs_staging2`.
+## Ejecución del Proyecto
+Para replicar el análisis:
+1. Cargar los datos en MySQL
+2. Ejecutar las consultas en el orden especificado
+3. Visualizar insights clave en dashboards o reportes
 
-## Contribuciones
+Este proyecto demuestra habilidades en manipulación y análisis de datos, clave para el rol de Data Analyst.
 
-Si deseas mejorar este proyecto o tienes sugerencias, siéntete libre de enviar un pull request o abrir un issue.
-
-## Autor
-
-**Zyodata**  
-*Analista de Datos y Responsable de Administración*
-
-## Licencia
-
-Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+---
+¡Conectemos! Puedes seguirme en GitHub para ver más proyectos relacionados con el análisis de datos y administración empresarial.
